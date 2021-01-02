@@ -28,6 +28,6 @@ pipeline{
     }
 }    
 def getdockerimage(){
-  def tag = sh script: 'git rev-parse HEAD' returnStdout: true
+  def tag = sh script: 'git rev-parse HEAD' , returnStdout:true
   return tag
 }
